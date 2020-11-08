@@ -140,7 +140,7 @@ public class Lusk_module7_word_occurrence extends Application {
 	 * This method updates the UI to reflect the top words using a
 	 * provided list of words
 	 * 
-	 * @param topWords a list with the top words
+	 * @param topWords a list with formatted strings of the words and how many times they occur
 	 */
 	public static void updateUiWords(List<String> topWords) {
 		//Loop through the list of words and add them to the topWordsList listview

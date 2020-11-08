@@ -20,10 +20,9 @@ import org.junit.Test;
 
 
 /**
- * <p>
  * The Lusk_module8_unit_test is a class that performs unit tests
  * on the methods from the Lusk_Text_Analyzer class
- * </p>
+ * 
  * 
  * @author Matthew Lusk
  * @version 1.0
@@ -33,7 +32,9 @@ public class Lusk_module8_unit_test {
 	
 	
 	/**
-	 * A jUnit test to test the method that converts a file to a hasmap
+	 * A jUnit test to test the method that converts a file to a HashMap
+	 * this tests if the method properly splits the file and how it
+	 * handles invalid files.
 	 */
 	@Test
 	public void testFileToMap() {
@@ -87,6 +88,8 @@ public class Lusk_module8_unit_test {
 	
 	/**
 	 * a jUnit test to test that the method correctly trims the list to the specified value
+	 * This tests if the method trims the list down to the specified size and how 
+	 * it handles edge cases
 	 */
 	@Test
 	public void testListSize() {

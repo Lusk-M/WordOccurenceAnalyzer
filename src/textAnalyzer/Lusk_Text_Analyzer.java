@@ -19,8 +19,9 @@ import java.util.Scanner;
 
 /**
  * The Lusk_Text_Analyzer class provides methods for splitting 
- * a text file into a hash map and sorting the map in 
- * various ways
+ * a text file into a hash map, sorting the map in 
+ * various ways, and returning a formatted list of words
+ * and how many times they occur
  * 
  * @author Matthew Lusk
  * @version 3.0
@@ -31,11 +32,11 @@ public class Lusk_Text_Analyzer {
 	//Method that converts a given file into a HashMap
 	/**
 	 * This method takes a file input and converts the file into
-	 * individual words in a HashMap, which includes the number 
-	 * of times the words occur
+	 * individual words in a HashMap, which includes the word and the number 
+	 * of times the word occurs
 	 * 
-	 * @param file the file to be converted to a hashmap
-	 * @return the HashMap of words and how many times the occur created from the file
+	 * @param file the file to be converted to a HashMap
+	 * @return the HashMap of words and how many times the occur created from the specified file
 	 * @throws FileNotFoundException if there is an issue retrieving the file
 	 */
 	public HashMap<String, Integer> textFileToMap(File file) throws FileNotFoundException {
@@ -71,10 +72,10 @@ public class Lusk_Text_Analyzer {
 	
 	//Method to sort the provided map into a linked map by the map Value
 	/**
-	 * A method to sort a HashMap into a LinkedHashMap.
+	 * A method to sort a HashMap into a LinkedHashMap by the integer in the map.
 	 * 
-	 * @param unsortedList an unsorted hash map
-	 * @return a sorted linkedhashmap of the provided hashmap
+	 * @param unsortedList an unsorted hash map of String and int
+	 * @return a LinkedHashMap sorted by the int in the map based on the provided HashMap
 	 */
 	public LinkedHashMap<String, Integer> sortMapByValue(HashMap<String, Integer> unsortedList){
 		//Create the map the new sorted values will be placed into
@@ -105,9 +106,9 @@ public class Lusk_Text_Analyzer {
 	 * A method to create a list of formatted strings of the specified number of top words
 	 * that occur in the provided map
 	 * 
-	 * @param numOfWords The number of words the list returned by the method should contain
-	 * @param listOfWords A list of words and the number of times they occur
-	 * @return The number of words specified by numOfWords in a formatted list of strings
+	 * @param numOfWords The number of words the list returned by the method should contain.
+	 * @param listOfWords A list of words and the number of times they occur.
+	 * @return A formatted list of strings containing the number of words specified by numOfWords 
 	 */
 	public List<String> printTopWords(int numOfWords, LinkedHashMap<String, Integer> listOfWords) {
 		//Create variable for counting
