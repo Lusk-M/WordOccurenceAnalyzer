@@ -36,7 +36,7 @@ public class Lusk_Text_Analyzer {
 	 * of times the word occurs
 	 * 
 	 * @param file the file to be converted to a HashMap
-	 * @return the HashMap of words and how many times the occur created from the specified file
+	 * @return the HashMap of words and how many times they occur created from the specified file
 	 * @throws FileNotFoundException if there is an issue retrieving the file
 	 */
 	public HashMap<String, Integer> textFileToMap(File file) throws FileNotFoundException {
@@ -74,8 +74,8 @@ public class Lusk_Text_Analyzer {
 	/**
 	 * A method to sort a HashMap into a LinkedHashMap by the integer in the map.
 	 * 
-	 * @param unsortedList an unsorted hash map of String and int
-	 * @return a LinkedHashMap sorted by the int in the map based on the provided HashMap
+	 * @param unsortedList an unsorted HashMap of words and how many times they occur
+	 * @return a LinkedHashMap sorted by the int number of times they occur in the map based on the provided HashMap
 	 */
 	public LinkedHashMap<String, Integer> sortMapByValue(HashMap<String, Integer> unsortedList){
 		//Create the map the new sorted values will be placed into
